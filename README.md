@@ -11,4 +11,4 @@ out HELLO WORLD!
 setvar x goodbye
 out var x
 
-would be passed into the lexer as a list like so: ['ÇOM This is an example program', 'out HELLO WORLD!', 'setvar x goodbye', 'out var x']
+would be passed into the lexer as a list like so: ['COM This is an example program', 'out HELLO WORLD!', 'setvar x goodbye', 'out var x']
