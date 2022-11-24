@@ -14,7 +14,7 @@ def set_file_path(path):
 
 
 def open_file():
-	path = askopenfilename(filetypes=[('Python Files', '*.py')])
+	path = askopenfilename(filetypes=[('Diamond Files', '*.di')])
 	with open(path, 'r') as file:
 		code = file.read()
 		editor.delete('1.0', END)
@@ -24,7 +24,7 @@ def open_file():
 
 def save_as():
 	if file_path == '':
-		path = asksaveasfilename(filetypes=[('Python Files', '*.py')])
+		path = asksaveasfilename(filetypes=[('Diamond Files', '*.di')])
 	else:
 		path = file_path
 	with open(path, 'w') as file:
