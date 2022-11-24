@@ -1,0 +1,10 @@
+CREATE VARIABLE: setvar variable-name value
+CALL ON VARIABLE: var variable name
+OUPUT: out text-output
+INPUT: variable_name in question
+IF STATEMENT:
+if condition
+...
+endif
+IMPORT EXTERNAL CODE: insert path-to-file
+GO TO A POINT IN CODE: goto line-number
