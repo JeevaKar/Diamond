@@ -4,7 +4,7 @@ import subprocess
 from lexer import lexer
 
 compiler = Tk()
-compiler.title('Diamon IDE')
+compiler.title('Diamond IDE')
 file_path = ''
 
 
