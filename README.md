@@ -12,3 +12,16 @@ setvar x goodbye
 out var x
 
 would be passed into the lexer as a list like so: ['COM This is an example program', 'out HELLO WORLD!', 'setvar x goodbye', 'out var x']
+
+Using the IDE:
+The IDE that comes with diamond comes with three menus: File, Run, and Debug
+
+Inside the File menu there are several basic options, which are open (to open a file), save (to save a file), save as (to save a file under a different name), and exit (to quit the program)
+
+Inside the Run menu there are two options: Run, and Run and Log Errors. The Run button simply runs the program that you have selcted. The Run and Log Errors button runs the program, and when an error occurs, the python error will be dumped into the dump.txt file. Please note that both these options will prompt you to save your code if not yet already.
+
+Inside the Debug menu there are several options: Cursor Position, Run and Log Errors, Error Codes, Syntax, and Read Dump Stack. The cursor position command will prompt the display of the current cursor position. This can be helpful when using the GOTO command. Run and Log Errors does the same thing as in the Run menu. Error Codes lists out all error codes and warning codes, which is the same as in the Errors.txt file. Syntax outputs the syntax for all commands in Diamond, and is the same as in the syntax.txt file. Read Dump Stack outputs the result of the most recent Runand Log Errors prompt.
+
+Dumping Errors: Dumping errors comes with a header including time. The time is in Greenwich Median time and is NOT localized to your timezone.
+
+To download and executable version: https://diamond-server.jacktheapple.repl.co
