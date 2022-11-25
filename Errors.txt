@@ -1,0 +1,8 @@
+-------------------------------------ERRORS-------------------------------------
+Error 1: Variable does not exist
+Error 2: Syntax error
+Error 3: Comparision not specified in if statement
+Error 4: File does not exist
+------------------------------------WARNINGS------------------------------------
+Warning 1: Output question not specified under input operand
+Warning 2: Initialize variable before use in input function
