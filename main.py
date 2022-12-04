@@ -3,6 +3,7 @@ from tkinter.ttk import Label
 from tkinter.filedialog import asksaveasfilename, askopenfilename
 import subprocess
 from lexer import lexer
+import threading
 import sys
 
 compiler = Tk()
@@ -70,13 +71,19 @@ def errors():
 
 def syntax():
 	file = open("Syntax.txt", 'r')
-	print(file.read())
+	syntax = file.read()
 	file.close()
+	save_prompt = Toplevel()
+	text = Label(save_prompt, text=syntax)
+	text.pack()
 
 def dump_stack():
 	file = open("dump.txt", "r")
-	print(file.read())
+	stack = file.read()
 	file.close()
+	save_prompt = Toplevel()
+	text = Label(save_prompt, text=stack)
+	text.pack()
 
 def exit():
 	sys.exit()
@@ -106,6 +113,6 @@ menu_bar.add_cascade(label="Debug", menu=debug_bar)
 compiler.config(menu=menu_bar)
 
 editor = Text()
-editor.pack()
+editor.pack(expand=True, fill=BOTH)
 
 compiler.mainloop()
